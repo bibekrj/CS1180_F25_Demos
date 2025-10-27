@@ -33,19 +33,29 @@ public class TrickOrTreat {
     }
 
     public static void main(String[] args) {
-        System.out.println("how many houses do you want to visit?");
-        Scanner scr = new Scanner(System.in);
-        int numHouses = scr.nextInt();
-        for (int i = 0; i < numHouses; i++) {
-            System.out.println("Trick or Treat");
-            String personSays = scr.next();
-            if (personSays.equalsIgnoreCase("trick")) {
-                System.out.println(trickedYou());
-            } else if (personSays.equalsIgnoreCase("treat")) {
-                String message = treatYou();
-                System.out.println(message);
+//        System.out.println("how many houses do you want to visit?");
+//        Scanner scr = new Scanner(System.in);
+//        int numHouses = scr.nextInt();
+//        for (int i = 0; i < numHouses; i++) {
+//            System.out.println("Trick or Treat");
+//            String personSays = scr.next();
+//            if (personSays.equalsIgnoreCase("trick")) {
+//                System.out.println(trickedYou());
+//            } else if (personSays.equalsIgnoreCase("treat")) {
+//                String message = treatYou();
+//                System.out.println(message);
+//
+//            }
+//        }
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.print(i+""+j+"\t");
 
             }
+
+            System.out.println(" " );
+
         }
 
 
