@@ -41,30 +41,36 @@ public class Vehicles {
     }
 
     public static void main(String[] args) {
-        System.out.println(Car.color);
-        Car carSample1 = new Car("Chevrolet", "Equinox", 2025);
-        System.out.println(carSample1.getMake());
-        System.out.println(carSample1.getModel());
-
-        carSample1.setMake("Honda");
-        carSample1.setModel("accord");
-        System.out.println(carSample1.getMake());
-        System.out.println(carSample1.getModel());
-        Car.color= "red";
-        System.out.println(Car.color);
-
-
-        carSample1.moveForward();
+//        System.out.println(Car.color);
+//        Car carSample1 = new Car("Chevrolet", "Equinox", 2025);
+////        carSample1.headLights = "led";
 //
-       Car carSample2 = new Car("Toyota", "Camry", 2025);
-       Car.color = "purple";
-        System.out.println(Car.color);
-       carSample2.moveForward();
-
-       Car.carGoesVroom();
-       carSample2.carGoesVroomVroom();
-//       Car.numberOfTyres = 4;
-
-
+//        carSample1.setHeadLights("led");
+//        carSample1.getHeadLights();
+//        System.out.println(carSample1.getMake());
+//        System.out.println(carSample1.getModel());
+//
+//        carSample1.setMake("Honda");
+//        carSample1.setModel("accord");
+//        System.out.println(carSample1.getMake());
+//        System.out.println(carSample1.getModel());
+//        Car.color= "red";
+//        System.out.println(Car.color);
+//
+//
+//        carSample1.moveForward();
+////
+//       Car carSample2 = new Car("Toyota", "Camry", 2025);
+//       Car.color = "purple";
+//        System.out.println(Car.color);
+//       carSample2.moveForward();
+//
+//       Car.carGoesVroom();
+//       carSample2.carGoesVroomVroom();
+////       Car.numberOfTyres = 4;
+        Truck tacomaSample = new Truck("Toyota","Tcoma", 5.5);
+//        System.out.println(tacomaSample.make);
+        System.out.println(tacomaSample.getModel());
+        tacomaSample.setModel("Tundra");
     }
 }

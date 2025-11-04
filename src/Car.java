@@ -2,10 +2,19 @@ public class Car {
     private String make;
     private String model;
     private int modelYear;
+    private String headLights;
     private boolean electricOrGas;
     public static String color = "white";
     final public int numberOfTyres = 4;
 
+
+    public String getHeadLights() {
+        return headLights;
+    }
+
+    public void setHeadLights(String headLights) {
+        this.headLights = headLights;
+    }
 
     public static void carGoesVroom(){
         System.out.println("vroom");
@@ -53,6 +62,8 @@ public class Car {
         carSample1.moveForward();
         carGoesVroom();
         carSample1.carGoesVroomVroom();
+        System.out.println(carSample1.headLights);
+        System.out.println(carSample1.getHeadLights());
 //        carSample1.numberOfTyres = 20;
 
     }
